@@ -10,15 +10,15 @@ function App() {
 
     return (
         <div className="App">
-            <Select placeholder='Выборы 2024' onSelect={selectHandler} options={[
-                {text: 'Путин', value: '111'},
-                {text: 'Первый кандидат', value: '222'},
-                {text: 'Второй кандидат', value: '333'}
+            <Select placeholder='Выберете ваш пол' onSelect={selectHandler} options={[
+                {text: 'Мужской', value: 'М'},
+                {text: 'Женский', value: 'Ж'},
+                {text: 'Ламинааад..', value: 'Л'},
             ]}
             />
 
-            <Input placeholder='Имя'/>
-            <Input placeholder='Фамилия'/>
+            <Input placeholder='Name'/>
+            <Input placeholder='Surname'/>
         </div>
     );
 }

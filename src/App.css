@@ -4,6 +4,11 @@
     font-family: 'Anek Latin', sans-serif;
 }
 
+:root {
+    --select-height: 40px;
+    --border-color: #ccc
+}
+
 .App {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,4 @@
-:root {
-    --select-height: 40px;
-}
+
 
 
 .Select {
@@ -24,7 +22,7 @@
 .Select__dropdown {
     display: none;
     position: absolute;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     background: white;
     border-radius: 5px;
 

@@ -1,4 +1,4 @@
-.Input {
+.Email {
     width: 100%;
     max-width: 300px;
     display: inline-block;
@@ -7,7 +7,7 @@
     margin-bottom: 25px;
 }
 
-.Input input {
+.Email input {
     width: 100%;
     min-height: var(--select-height);
 
@@ -21,7 +21,7 @@
     border-radius: 5px;
 }
 
-.Input label {
+.Email label {
     user-select: none;
     position: absolute;
     pointer-events: none;
@@ -35,15 +35,15 @@
     transition: .3s all;
 }
 
-.Input input:focus ~ label,
-.Input input:not(:focus):valid ~ label {
+.Email input:focus ~ label,
+.Email input:not(:focus):valid ~ label {
     top: -29px;
     left: 2px;
     font-size: 15px;
     color: #555555;
 }
 
-.Input input:not(:focus):valid {
+.Email input:not(:focus):valid {
     border-bottom: 3px solid var(--green);
     transition: .3s;
 }

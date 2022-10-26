@@ -1,0 +1,47 @@
+.Input {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.Input input {
+    max-width: 300px;
+    width: 100%;
+    min-height: 40px;
+
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    outline: none;
+
+    font-size: 18px;
+    border-bottom: 3px solid #cd1b1b;
+}
+
+.Input label {
+    user-select: none;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    right: 10px;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 40px;
+    font-size: 18px;
+    transition: .3s all;
+}
+
+.Input input:focus ~ label,
+.Input input:not(:focus):valid ~ label {
+    top: -29px;
+    left: 2px;
+    font-size: 15px;
+    color: #555555;
+}
+
+.Input input:not(:focus):valid {
+    border-bottom: 3px solid #0bc40b;
+    transition: .3s;
+}

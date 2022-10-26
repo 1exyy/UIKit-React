@@ -1,0 +1,66 @@
+:root {
+    --select-height: 40px;
+}
+
+
+.Select {
+    max-width: 300px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.Select__input {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 1rem;
+    height: var(--select-height);
+}
+
+.Select__dropdown {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 5px;
+
+    top: var(--select-height);
+    left: 0;
+    right: 0;
+
+    max-height: 200px;
+    overflow-y: auto;
+
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, .3);
+    z-index: 100;
+}
+
+.Select__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.Select__item {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    user-select: none;
+}
+
+.Select__item:hover {
+    cursor: pointer;
+    background-color: #eee;
+    transition: .15s background-color ease-in;
+}
+
+.Select__dropdown.open {
+    display: block;
+}
+
+.Select__dropdown.open + .Select {
+    border-bottom: none;
+}

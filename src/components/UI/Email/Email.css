@@ -36,7 +36,14 @@
 }
 
 .Email input:focus ~ label,
-.Email input:not(:focus):valid ~ label {
+.Email input:optional:not(:focus):valid ~ label {
+    top: -29px;
+    left: 2px;
+    font-size: 15px;
+    color: #555555;
+}
+
+label.not-empty {
     top: -29px;
     left: 2px;
     font-size: 15px;

@@ -4,7 +4,7 @@ import './Date.css';
 const Date = (props) => {
 
     const pickerHandler = (event) => {
-        event.currentTarget.children[0].showPicker()
+        event.currentTarget.children[0].showPicker();
     }
 
     return (

@@ -7,6 +7,8 @@ import Checkbox from "./components/UI/Checkbox/Checkbox";
 import Radio from "./components/UI/Radio/Radio";
 import Date from "./components/UI/Date/Date";
 import Email from "./components/UI/Email/Email";
+import Password from "./components/UI/Password/Password";
+import Switch from "./components/UI/Switch/Switch";
 
 function App() {
     const selectHandler = (event) => {
@@ -35,11 +37,15 @@ function App() {
             {/*<code>input[type='date']</code>*/}
             <Date/>
 
+            <Password/>
+
             {/*<code>radio and checkbox</code>*/}
             <div style={{display: 'flex', gap: '50px', 'marginBottom': '25px'}}>
                 <Checkbox onChange={checkBoxHandler}/>
                 <Radio onChange={checkBoxHandler}/>
             </div>
+            <Switch/>
+
         </div>
     );
 }

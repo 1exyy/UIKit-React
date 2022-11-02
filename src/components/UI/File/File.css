@@ -1,0 +1,121 @@
+.File {
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.File input {
+    display: none;
+}
+
+.File > .drop {
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--select-height);
+    border: 1px solid var(--border-color);
+
+    border-bottom: 3px solid var(--red)
+}
+
+.File > .drop.active {
+    border-bottom: 3px solid var(--green);
+    transition: .3s all;
+}
+
+.File > .drop:hover > i {
+    position: absolute;
+    animation: arrow-down .3s;
+}
+
+.File .drop i {
+    font-size: 30px;
+    color: black;
+}
+
+.File .drop.drag {
+    border: 1px dotted;
+}
+
+.file_list__item {
+    box-sizing: border-box;
+    list-style: none;
+    padding-right: 30px;
+    border: 1px solid var(--border-color);
+    max-height: var(--select-height);
+}
+
+.file_list__item_name {
+    white-space: nowrap;
+    overflow-x: hidden;
+    user-select: none;
+    max-width: 235px;
+}
+
+.files_list {
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+    max-height: 200px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.file_list__item {
+    animation: fall .3s;
+    position: relative;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    background: white;
+    z-index: 100;
+}
+
+.file_list__item > .fa-times {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.file_list__item > .fa-file {
+    margin-right: 10px;
+}
+
+.file_list__item:nth-child(1) {
+    border-top: 0;
+}
+
+.file_list__item:hover {
+    background-color: #f6f6f6;
+    transition: .3s;
+}
+
+
+.file_list__item:nth-last-child(1) {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+@keyframes arrow-down {
+    from {
+        top: -10px;
+    }
+    to {
+        top: 7px
+    }
+}
+
+@keyframes fall {
+    from {
+        top: -40px;
+    }
+    to {
+        top: 0;
+    }
+}

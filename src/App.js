@@ -9,10 +9,11 @@ import Date from "./components/UI/Date/Date";
 import Email from "./components/UI/Email/Email";
 import Password from "./components/UI/Password/Password";
 import Switch from "./components/UI/Switch/Switch";
+import File from "./components/UI/File/File";
 
 function App() {
     const selectHandler = (event) => {
-        console.log(event.target.dataset.value)
+        console.log(event)
     }
 
     const checkBoxHandler = (value) => {
@@ -22,29 +23,31 @@ function App() {
     return (
         <div className="App">
             {/*<code>select</code>*/}
-            <Select placeholder='Выберете ваш пол' onSelect={selectHandler} options={[
-                {text: 'Мужской', value: "М"},
-                {text: 'Женский', value: "Ж"}
-            ]}
-            />
+            {/*<Select placeholder='Выберете ваш пол' onSelect={selectHandler} options={[*/}
+            {/*    {text: 'Мужской', value: "М"},*/}
+            {/*    {text: 'Женский', value: "Ж"}*/}
+            {/*]}*/}
+            {/*/>*/}
 
             {/*<code>input[type='text']</code>*/}
-            <Input placeholder='Name'/>
+            {/*<Input placeholder='Name'/>*/}
 
             {/*<code>input[type='email']</code>*/}
-            <Email/>
+            {/*<Email/>*/}
 
             {/*<code>input[type='date']</code>*/}
-            <Date/>
+            {/*<Date/>*/}
 
-            <Password/>
+            {/*<Password/>*/}
+
+            <File/>
 
             {/*<code>radio and checkbox</code>*/}
-            <div style={{display: 'flex', gap: '50px', 'marginBottom': '25px'}}>
-                <Checkbox onChange={checkBoxHandler}/>
-                <Radio onChange={checkBoxHandler}/>
-            </div>
-            <Switch/>
+            {/*<div style={{display: 'flex', gap: '50px', 'marginBottom': '25px'}}>*/}
+            {/*    <Checkbox onChange={checkBoxHandler}/>*/}
+            {/*    <Radio onChange={checkBoxHandler}/>*/}
+            {/*</div>*/}
+            {/*<Switch/>*/}
 
         </div>
     );

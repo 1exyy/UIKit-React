@@ -22,31 +22,27 @@ function App() {
 
     return (
         <div className="App">
-            {/*<code>select</code>*/}
             {/*<Select placeholder='Выберете ваш пол' onSelect={selectHandler} options={[*/}
             {/*    {text: 'Мужской', value: "М"},*/}
             {/*    {text: 'Женский', value: "Ж"}*/}
             {/*]}*/}
             {/*/>*/}
 
-            {/*<code>input[type='text']</code>*/}
             {/*<Input placeholder='Name'/>*/}
 
-            {/*<code>input[type='email']</code>*/}
             {/*<Email/>*/}
 
-            {/*<code>input[type='date']</code>*/}
             {/*<Date/>*/}
 
             {/*<Password/>*/}
 
             <File/>
 
-            {/*<code>radio and checkbox</code>*/}
             {/*<div style={{display: 'flex', gap: '50px', 'marginBottom': '25px'}}>*/}
             {/*    <Checkbox onChange={checkBoxHandler}/>*/}
             {/*    <Radio onChange={checkBoxHandler}/>*/}
             {/*</div>*/}
+
             {/*<Switch/>*/}
 
         </div>

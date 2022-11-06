@@ -1,7 +1,9 @@
+
 .File {
     margin-bottom: 25px;
     width: 100%;
     max-width: 300px;
+    min-height: 40px;
 }
 
 .File input {
@@ -15,20 +17,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: var(--select-height);
+    min-height: calc(var(--select-height));
     border: 1px solid var(--border-color);
-
-    border-bottom: 3px solid var(--red)
 }
 
-.File > .drop.active {
-    border-bottom: 3px solid var(--green);
-    transition: .3s all;
+
+.none {
+    display: none;
 }
 
 .File > .drop:hover > i {
     position: absolute;
-    animation: arrow-down .3s;
 }
 
 .File .drop i {
@@ -37,7 +36,7 @@
 }
 
 .File .drop.drag {
-    border: 1px dotted;
+    border: 4px dashed;
 }
 
 .file_list__item {
@@ -49,13 +48,15 @@
 }
 
 .file_list__item_name {
+    font-weight: normal;
     white-space: nowrap;
     overflow-x: hidden;
     user-select: none;
-    max-width: 235px;
+    max-width: 200px;
 }
 
 .files_list {
+    position: relative;
     margin: 0;
     padding: 0;
     max-width: 300px;
@@ -82,12 +83,8 @@
     font-size: 12px;
 }
 
-.file_list__item > .fa-file {
+.file_list__item > i {
     margin-right: 10px;
-}
-
-.file_list__item:nth-child(1) {
-    border-top: 0;
 }
 
 .file_list__item:hover {
@@ -95,20 +92,13 @@
     transition: .3s;
 }
 
+.file_list__item:nth-child(1) {
+    border-top: none;
+}
 
 .file_list__item:nth-last-child(1) {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-}
-
-
-@keyframes arrow-down {
-    from {
-        top: -10px;
-    }
-    to {
-        top: 7px
-    }
 }
 
 @keyframes fall {

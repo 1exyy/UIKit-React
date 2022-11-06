@@ -32,6 +32,9 @@ const Select = ({onSelect, placeholder, ...props}) => {
                     })}
                 </ul>
             </div>
+            <div className={`backdrop ${open ? 'open' : ''}`} onClick={openHandler}>
+
+            </div>
         </div>
     );
 };

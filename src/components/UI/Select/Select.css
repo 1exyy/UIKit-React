@@ -1,5 +1,5 @@
 .Select {
-    max-width: 300px;
+    max-width: var(--component-width);
     width: 100%;
     position: relative;
 }
@@ -26,7 +26,7 @@
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 0 1rem;
-    height: var(--select-height);
+    height: var(--component-height);
 }
 
 .Select__dropdown {
@@ -36,7 +36,7 @@
     background: white;
     border-radius: 5px;
 
-    top: var(--select-height);
+    top: var(--component-height);
     left: 0;
     right: 0;
 

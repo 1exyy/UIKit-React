@@ -2,15 +2,16 @@
     position: relative;
     overflow: hidden;
 
-    max-width: 300px;
+    max-width: var(--component-width);
     width: 100%;
-    min-height: var(--select-height);
+    min-height: var(--component-height);
 
     border: none;
     padding: 0;
     background: none;
 
     transition: .2s;
+    cursor: pointer;
 }
 
 .button__line {
@@ -19,15 +20,75 @@
 }
 
 .button__line--top {
+    background: linear-gradient(90deg, transparent, var(--color-blue));
     top: 0;
     width: 100%;
     height: 2px;
-    background: var(--color-gradient-blue);
     left: -100%;
+}
+
+.button__line--bottom {
+    background: linear-gradient(270deg, transparent, var(--color-blue));
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    right: -100%;
+}
+
+.button__line--left {
+    background: linear-gradient(0deg, transparent, var(--color-blue));
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    left: 0;
+}
+
+.button__line--right {
+    background: linear-gradient(180deg, transparent, var(--color-blue));
+    top: -100%;
+    width: 2px;
+    height: 100%;
+    right: 0;
+}
+
+.Button:hover .button__line--right{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+.Button:hover .button__line--left{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.Button:hover .button__line--bottom{
+    right: 100%;
+    transition: 1s;
+    transition-delay: .25s;
 }
 
 .Button:hover .button__line--top {
     left: 100%;
     transition: 1s;
     transition-delay: .25s;
+}
+.Button span{
+    color: var(--color-blue);
+    text-transform: uppercase;
+    font-size: 17px;
+
+}
+.Button:hover {
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--color-blue),0 0 40px var(--color-blue),0 0 80px var(--color-blue);
+    background: var(--color-blue);
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+.Button:hover span{
+    color: white;
+    transition: 1s;
+    transition-delay: .9s;
 }

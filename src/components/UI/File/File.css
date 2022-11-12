@@ -1,7 +1,7 @@
 .File {
     width: 100%;
-    max-width: 300px;
-    min-height: 40px;
+    max-width: var(--component-width);
+    min-height: var(--component-height);
 }
 
 .File input {
@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: calc(var(--select-height));
+    min-height: var(--component-height);
     border: 1px solid var(--border-color);
 }
 
@@ -42,7 +42,7 @@
     list-style: none;
     padding-right: 30px;
     border: 1px solid var(--border-color);
-    max-height: var(--select-height);
+    max-height: var(--component-height);
 }
 
 .file_list__item_name {

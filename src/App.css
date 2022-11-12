@@ -5,11 +5,12 @@
 }
 
 :root {
-    --select-height: 40px;
+    --component-height: 40px;
+    --component-width: 300px;
     --border-color: #dcdcdc;
     --color-green: #0bc40b;
     --color-red: #cd1b1b;
-    --color-gradient-blue:  linear-gradient(90deg,transparent,#2196f3);
+    --color-blue: #2196f3;
 }
 
 

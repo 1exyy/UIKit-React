@@ -1,39 +1,39 @@
 .Switch {
     position: relative;
     cursor: pointer;
-    border: 2px solid var(--red);
+    border: 2px solid var(--color-red);
     border-radius: 40px;
     width: 100%;
     max-width: 90px;
-    height: var(--select-height);
+    height: var(--component-height);
     padding: 3px;
 }
 
 .Switch span {
     position: absolute;
-    width: calc(var(--select-height));
-    height: calc(var(--select-height));
+    width: calc(var(--component-height));
+    height: calc(var(--component-height));
     background: red;
-    box-shadow: 0 0 3px var(--red);
+    box-shadow: 0 0 3px var(--color-red);
     border-radius: 100%;
 }
 
 .Switch input:checked ~ span {
     background: #0bc40b;
-    box-shadow: 0 0 5px var(--green);
-    left: calc(97% - var(--select-height));
+    box-shadow: 0 0 5px var(--color-green);
+    left: calc(97% - var(--component-height));
     transition: .5s left;
 }
 
 .Switch input:not(:checked) ~ span {
     background: red;
-    box-shadow: 0 0 5px var(--red);
+    box-shadow: 0 0 5px var(--color-red);
     left: 3px;
     transition: .5s left;
 }
 
 .Switch.check {
-    border: 2px solid var(--green);
+    border: 2px solid var(--color-green);
 }
 
 .Switch input {

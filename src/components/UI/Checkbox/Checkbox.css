@@ -1,5 +1,5 @@
 .Checkbox {
-    color: var(--green);
+    color: var(--color-green);
     font-size: 30px;
 
     display: flex;
@@ -8,8 +8,8 @@
 
     cursor: pointer;
 
-    width: var(--select-height);
-    height: var(--select-height);
+    width: var(--component-height);
+    height: var(--component-height);
     border: 1px solid var(--border-color);
 
     border-radius: 5px;

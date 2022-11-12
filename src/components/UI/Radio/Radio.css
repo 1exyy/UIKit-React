@@ -5,8 +5,8 @@
 
     cursor: pointer;
 
-    width: var(--select-height);
-    height: var(--select-height);
+    width: var(--component-height);
+    height: var(--component-height);
 
     border: 1px solid var(--border-color);
     border-radius: 100%;
@@ -14,14 +14,14 @@
 
 .Radio span {
     display: inline-block;
-    width: calc(var(--select-height) / 1.5);
-    height: calc(var(--select-height) / 1.5);
-    background-color: var(--green);
+    width: calc(var(--component-height) / 1.5);
+    height: calc(var(--component-height) / 1.5);
+    background-color: var(--color-green);
     border-radius: 100%;
 }
 
 .Radio.active{
-  box-shadow: 0 0 5px var(--green);
+  box-shadow: 0 0 5px var(--color-green);
 }
 
 .Radio span.hide {

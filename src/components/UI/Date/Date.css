@@ -1,5 +1,5 @@
 .Date {
-    max-width: 300px;
+    max-width: var(--component-width);
     width: 100%;
     display: flex;
 }
@@ -7,7 +7,7 @@
 .Date input {
     position: relative;
     width: 100%;
-    min-height: var(--select-height);
+    min-height: var(--component-height);
 
     box-sizing: border-box;
     border: 1px solid var(--border-color);
@@ -15,15 +15,15 @@
     outline: none;
 
     font-size: 18px;
-    border-bottom: 3px solid var(--red);
+    border-bottom: 3px solid var(--color-red);
     border-radius: 5px 0 0 5px;
 }
 
 .Date i {
     cursor: pointer;
 
-    width: var(--select-height);
-    height: var(--select-height);
+    width: var(--component-height);
+    height: var(--component-height);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@
 
     border: 1px solid var(--border-color);
     border-left: none;
-    border-bottom: 3px solid var(--red);
+    border-bottom: 3px solid var(--color-red);
     border-radius: 0 5px 5px 0;
 }
 
@@ -48,12 +48,12 @@
 }
 
 .Date input:not(:focus):valid {
-    border-bottom: 3px solid var(--green);
+    border-bottom: 3px solid var(--color-green);
     transition: .3s;
 }
 
 .Date input:not(:focus):valid + i {
-    border-bottom: 3px solid var(--green);
+    border-bottom: 3px solid var(--color-green);
     transition: .3s;
 }
 

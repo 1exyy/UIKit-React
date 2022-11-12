@@ -1,6 +1,4 @@
-
 .File {
-    margin-bottom: 25px;
     width: 100%;
     max-width: 300px;
     min-height: 40px;
@@ -77,7 +75,7 @@
 
 .file_list__item > .fa-times {
     position: absolute;
-    right: 5px;
+    right: 0;
     top: 5px;
     cursor: pointer;
     font-size: 12px;

@@ -1,8 +1,7 @@
 .Select {
     max-width: 300px;
-    position: relative;
     width: 100%;
-    margin-bottom: 25px;
+    position: relative;
 }
 
 .backdrop {

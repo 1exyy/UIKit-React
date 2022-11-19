@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Radio.css';
 
-const Radio = ({onChange, ...props}) => {
+export const Radio = ({onChange, ...props}) => {
     const [check, setCheck] = useState(props.check || false);
 
     const radioCheckHandler = () => {

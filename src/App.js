@@ -1,23 +1,23 @@
-import React, {useState} from "react";
+import React from "react";
+import useOutside from "./hooks/useOutside.hook";
 import './App.css';
 
-import Select from "./components/UI/Select/Select";
-import Input from "./components/UI/Input/Input";
-import Checkbox from "./components/UI/Checkbox/Checkbox";
-import Radio from "./components/UI/Radio/Radio";
-import Date from "./components/UI/Date/Date";
-import Email from "./components/UI/Email/Email";
-import Password from "./components/UI/Password/Password";
-import Switch from "./components/UI/Switch/Switch";
-import File from "./components/UI/File/File";
-import Frame from "./components/Frame/Frame";
-import Popup from "./components/UI/MAC/Popup/Popup";
-import Button from "./components/UI/Button/Button";
-import useOutside from "./hooks/useOutside.hook";
+import {Select} from "./components/UI/Select/Select";
+import {Input} from "./components/UI/Input/Input";
+import {Checkbox} from "./components/UI/Checkbox/Checkbox";
+import {Radio} from "./components/UI/Radio/Radio";
+import {Date} from "./components/UI/Date/Date";
+import {Email} from "./components/UI/Email/Email";
+import {Password} from "./components/UI/Password/Password";
+import {Switch} from "./components/UI/Switch/Switch";
+import {File} from "./components/UI/File/File";
+import {Frame} from "./components/Frame/Frame";
+import {Popup} from "./components/UI/MAC/Popup/Popup";
+import {Button} from "./components/UI/Button/Button";
 
 function App() {
 
-    const {ref,isShow, setIsShow} = useOutside(false);
+    const {ref, isShow, setIsShow} = useOutside(false);
     const selectHandler = (event) => {
         console.log(event)
     }
@@ -93,11 +93,14 @@ function App() {
             </Frame>
 
             <Frame className="frame_1">
-                <Button onClick={()=>setIsShow(true)}>
+                <Button onClick={() => setIsShow(true)}>
                     Жимааай
                 </Button>
                 <Popup title='Внимание!' state={isShow} stateFx={setIsShow} addRef={ref}>
-                    По рзелульаттам илссеовадний одонго анлигйсокго унвиертисета, не иеемт занчнеия, в кокам пряокде рсапожолены бкувы в солве. Галвоне, чотбы преавя и пслоендяя бквуы блыи на мсете. Осатьлыне бкувы мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся то, что мы чиатем не кдаужю бкуву по отдльенотси, а все солво цликеом.
+                    По рзелульаттам илссеовадний одонго анлигйсокго унвиертисета, не иеемт занчнеия, в кокам пряокде
+                    рсапожолены бкувы в солве. Галвоне, чотбы преавя и пслоендяя бквуы блыи на мсете. Осатьлыне бкувы
+                    мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся
+                    то, что мы чиатем не кдаужю бкуву по отдльенотси, а все солво цликеом.
                 </Popup>
             </Frame>
         </div>

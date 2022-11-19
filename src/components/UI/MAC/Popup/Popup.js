@@ -1,7 +1,7 @@
 import React from 'react';
 import './Popup.css';
 
-const Popup = ({stateFx, state, ...props}) => {
+export const Popup = ({stateFx, state, ...props}) => {
     return (
         <div>
             <div className={`Popup ${state ? 'open' : ''}`} onClick={e => e.stopPropagation()} ref={props.addRef}>
@@ -28,4 +28,4 @@ const Popup = ({stateFx, state, ...props}) => {
     );
 };
 
-export default Popup;
+

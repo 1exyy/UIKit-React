@@ -1,7 +1,7 @@
 import React from 'react';
 import './Date.css';
 
-const Date = (props) => {
+export const Date = (props) => {
 
     const pickerHandler = (event) => {
         event.currentTarget.children[0].showPicker();
@@ -15,4 +15,3 @@ const Date = (props) => {
     );
 };
 
-export default Date;

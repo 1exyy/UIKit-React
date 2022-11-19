@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Email.css';
 
-const Email = ({className, ...props}) => {
+export const Email = ({className, ...props}) => {
     const [value, setValue] = useState('');
     return (
         <div className={`Input ${className}`}>
@@ -11,4 +11,3 @@ const Email = ({className, ...props}) => {
     );
 };
 
-export default Email;

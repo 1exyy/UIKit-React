@@ -1,7 +1,7 @@
 import React from 'react';
 import './Input.css';
 
-const Input = ({placeholder, className, ...props}) => {
+export const Input = ({placeholder, className, ...props}) => {
     return (
         <div className={`Input ${className}`}>
             <input type="text" {...props} required/>
@@ -10,4 +10,3 @@ const Input = ({placeholder, className, ...props}) => {
     );
 };
 
-export default Input;

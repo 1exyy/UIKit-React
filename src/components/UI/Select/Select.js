@@ -3,7 +3,7 @@ import useOutside from "../../../hooks/useOutside.hook";
 
 import './Select.css';
 
-const Select = ({onSelect, placeholder, ...props}) => {
+export const Select = ({onSelect, placeholder, ...props}) => {
     const {ref, isShow, setIsShow} = useOutside(false);
     const [itemText, setItemText] = useState(placeholder || '');
 
@@ -34,4 +34,3 @@ const Select = ({onSelect, placeholder, ...props}) => {
     );
 };
 
-export default Select;

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Password.css';
 
-const Password = (props) => {
+export const Password = (props) => {
     const [visible, setVisible] = useState(false);
 
     const visibleHandler = () => {
@@ -16,4 +16,3 @@ const Password = (props) => {
     );
 };
 
-export default Password;

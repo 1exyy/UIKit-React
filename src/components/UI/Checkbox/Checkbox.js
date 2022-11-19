@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './Checkbox.css';
 
-const Checkbox = ({onChange, ...props}) => {
+export const Checkbox = ({onChange, ...props}) => {
     const [check, setCheck] = useState(props.check || false);
 
     const checkHandler = () => {
@@ -16,4 +16,3 @@ const Checkbox = ({onChange, ...props}) => {
     );
 };
 
-export default Checkbox;

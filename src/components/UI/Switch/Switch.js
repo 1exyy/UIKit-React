@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Switch.css';
 
-const Switch = () => {
+export const Switch = () => {
     const [check, setCheck] = useState(false);
 
     const checkHandler = () => {
@@ -16,4 +16,3 @@ const Switch = () => {
     );
 };
 
-export default Switch;

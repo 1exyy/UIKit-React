@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './File.css';
+import Email from "../Email/Email";
 
 const contentTypes = {
     'jpg': 'fa-file-image-o',
@@ -24,7 +25,8 @@ const contentTypes = {
     'xls': 'fa-file-excel-o',
 }
 
-const File = ({onChange, ...props}) => {
+
+export const File = ({onChange, ...props}) => {
     const [filesList, setFilesList] = useState([]);
     const [drag, setDrag] = useState(false);
 
@@ -109,4 +111,3 @@ const File = ({onChange, ...props}) => {
     );
 };
 
-export default File;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.css';
 
-const Button = (props) => {
+export const Button = (props) => {
     return (
         <button className={`Button ${props.className ? props.className : ''}`} {...props}>
             <span className="button__line button__line--top"/>
@@ -13,4 +13,3 @@ const Button = (props) => {
     );
 };
 
-export default Button;

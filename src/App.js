@@ -1,22 +1,23 @@
 import React from "react";
 import useOutside from "./hooks/useOutside.hook";
+import {Frame} from "./components/Frame/Frame";
+import {
+    Select,
+    Input,
+    Checkbox,
+    Radio,
+    Date,
+    Email,
+    Password,
+    Switch,
+    File,
+    Popup,
+    Button
+} from "./components/UI";
+
 import './App.css';
 
-import {Select} from "./components/UI/Select/Select";
-import {Input} from "./components/UI/Input/Input";
-import {Checkbox} from "./components/UI/Checkbox/Checkbox";
-import {Radio} from "./components/UI/Radio/Radio";
-import {Date} from "./components/UI/Date/Date";
-import {Email} from "./components/UI/Email/Email";
-import {Password} from "./components/UI/Password/Password";
-import {Switch} from "./components/UI/Switch/Switch";
-import {File} from "./components/UI/File/File";
-import {Frame} from "./components/Frame/Frame";
-import {Popup} from "./components/UI/MAC/Popup/Popup";
-import {Button} from "./components/UI/Button/Button";
-
 function App() {
-
     const {ref, isShow, setIsShow} = useOutside(false);
     const selectHandler = (event) => {
         console.log(event)

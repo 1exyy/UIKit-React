@@ -1,21 +1,9 @@
-.popup_backdrop {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    display: none;
-    left: 0;
-    top: 0;
-    z-index: 99;
-}
-
-.popup_backdrop.open {
-    display: block;
-    overflow: hidden;
-}
-
 .Popup {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    position: absolute;
+
+    position: fixed;
     z-index: 100;
 
     max-width: 450px;

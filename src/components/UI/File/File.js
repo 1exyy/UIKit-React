@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './File.css';
-import Email from "../Email/Email";
 
 const contentTypes = {
     'jpg': 'fa-file-image-o',

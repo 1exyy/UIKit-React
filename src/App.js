@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import useOutside from "./hooks/useOutside.hook";
 import {Frame} from "./components/Frame/Frame";
 import {
@@ -12,19 +12,29 @@ import {
     Switch,
     File,
     Popup,
-    Button
+    Button,
+    Loader
 } from "./components/UI";
 
 import './App.css';
 
 function App() {
     const {ref, isShow, setIsShow} = useOutside(false);
+    const [load, setLoad] = useState(false);
+
     const selectHandler = (event) => {
         console.log(event)
     }
 
     const checkBoxHandler = (value) => {
         console.log(value)
+    }
+
+    const requestHandler = () => {
+        setLoad(true)
+        setTimeout(() => {
+            setLoad(false)
+        }, 5000)
     }
 
     return (
@@ -103,6 +113,10 @@ function App() {
                     мгоут селдовтаь в плоонм бсепордяке, все-рвано ткест чтаитсея без побрелм. Пичрионй эгото ялвятеся
                     то, что мы чиатем не кдаужю бкуву по отдльенотси, а все солво цликеом.
                 </Popup>
+                <Loader load={load}/>
+                <Button onClick={requestHandler}>
+                    Запустить загрузку
+                </Button>
             </Frame>
         </div>
     );

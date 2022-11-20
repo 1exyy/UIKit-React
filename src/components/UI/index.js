@@ -9,3 +9,4 @@ export {Radio} from './Radio/Radio';
 export {Select} from './Select/Select';
 export {Switch} from './Switch/Switch';
 export {Popup} from './MAC/Popup/Popup'
+export {Loader} from './Loader/Loader'

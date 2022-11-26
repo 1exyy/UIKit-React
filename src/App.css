@@ -45,3 +45,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.frame_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

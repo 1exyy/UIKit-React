@@ -8,5 +8,6 @@ export {Password} from './Password/Password';
 export {Radio} from './Radio/Radio';
 export {Select} from './Select/Select';
 export {Switch} from './Switch/Switch';
-export {Popup} from './MAC/Popup/Popup'
-export {Loader} from './Loader/Loader'
+export {Popup} from './MAC/Popup/Popup';
+export {Loader} from './Loader/Loader';
+export {Card} from './Card/Card';

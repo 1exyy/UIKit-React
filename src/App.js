@@ -13,7 +13,7 @@ import {
     File,
     Popup,
     Button,
-    Loader
+    Loader, Card
 } from "./components/UI";
 
 import './App.css';
@@ -117,6 +117,14 @@ function App() {
                 <Button onClick={requestHandler}>
                     Запустить загрузку
                 </Button>
+
+            </Frame>
+            <Frame className='frame_card'>
+                <Card title='Title'>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Illum, odio, quo.
+                    A aliquam animi beatae blanditiis consectetur corporis distinctio earum, eius ipsa ipsam iure labore magnam necessitatibus non obcaecati omnis porro quae quidem reiciendis, repellat sed voluptatibus voluptatum.
+                </Card>
             </Frame>
         </div>
     );

@@ -6,7 +6,7 @@
     width: 100%;
     min-height: var(--component-height);
 
-    border: none;
+    border: 1px solid var(--border-color);
     padding: 0;
     background: none;
 
@@ -51,18 +51,19 @@
     right: 0;
 }
 
-.Button:hover .button__line--right{
+.Button:hover .button__line--right {
     top: 100%;
     transition: 1s;
     transition-delay: 0s;
 }
-.Button:hover .button__line--left{
+
+.Button:hover .button__line--left {
     bottom: 100%;
     transition: 1s;
     transition-delay: 0s;
 }
 
-.Button:hover .button__line--bottom{
+.Button:hover .button__line--bottom {
     right: 100%;
     transition: 1s;
     transition-delay: .25s;
@@ -73,21 +74,24 @@
     transition: 1s;
     transition-delay: .25s;
 }
-.Button span{
+
+.Button span {
     color: var(--color-blue);
     text-transform: uppercase;
     font-size: 17px;
 
 }
+
 .Button:hover {
+    border: none;
     border-radius: 5px;
-    box-shadow: 0 0 10px var(--color-blue),0 0 40px var(--color-blue),0 0 80px var(--color-blue);
+    box-shadow: 0 0 10px var(--color-blue), 0 0 40px var(--color-blue), 0 0 80px var(--color-blue);
     background: var(--color-blue);
     transition: 1s;
     transition-delay: 1s;
 }
 
-.Button:hover span{
+.Button:hover span {
     color: white;
     transition: 1s;
     transition-delay: .9s;
